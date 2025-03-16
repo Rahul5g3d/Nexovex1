@@ -3,11 +3,13 @@ import NavBar from "./Component/NavBar";
 import Home from "./Component/Pages/Home";
 import About from "./Component/Pages/About";
 import Contact from "./Component/Pages/Contact";
-import ChallengeOfTheMonth from "./Component/Pages/ChallengeOfTheMonth";
-import PreviousChallenges from "./Component/Pages/PreviousChallenges";
-import SEO from "./Component/Pages/SEO";
-import SMM from "./Component/Pages/SMM";
-
+import COM from "./Component/Pages/Challenges/ChallengeOfTheMonth";
+import COM_Pwinner from "./Component/Pages/Challenges/COM_Pwinner";
+import COM_Rules from "./Component/Pages/Challenges/COM_Rule";
+import COM_participate from "./Component/Pages/Challenges/COM_participate";
+import U_events from "./Component/Pages/Hackathon/U_events";
+import P_events from "./Component/Pages/Hackathon/P_Events";
+import H_Highlights from "./Component/Pages/Hackathon/H_highlight";
 function App() {
   return (
     <Router>
@@ -16,16 +18,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route
-          path="/challenge-of-the-month"
-          element={<ChallengeOfTheMonth />}
-        />
-        <Route
-          path="/pages/challenges/p-challenge"
-          element={<PreviousChallenges />}
-        />
-        <Route path="/seo" element={<SEO />} />
-        <Route path="/smm" element={<SMM />} />
+        <Route path="/COM" element={<COM />} />
+        <Route path="/COM_Pwinner" element={<COM_Pwinner />} />
+        <Route path="/COM_Rules" element={<COM_Rules />} />
+        <Route path="/COM_participate" element={<COM_participate />} />
+        <Route path="/U_events" element={<U_events />} />
+        <Route path="/P_events" element={<P_events />} />
+        <Route path="/H_Highlights" element={<H_Highlights />} />
       </Routes>
     </Router>
   );

@@ -35,13 +35,13 @@ const NavBar = () => {
   return (
     <div className="body">
       <nav className="navbar">
-        <div className="logo">Brand</div>
+        <div className="logo">Nexovex</div>
         <div className="hamburger" id="hamburger" ref={hamburgerRef}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
-        <ul className="nav-menu" id="nav-menu" ref={navMenuRef}>
+        <li className="nav-menu" id="nav-menu" ref={navMenuRef}>
           <li>
             <NavLink exact to="/" activeClassName="active">
               Home
@@ -52,38 +52,91 @@ const NavBar = () => {
               Challenges
             </NavLink>
             <ul className="dropdown-menu">
-              <li>
-                <NavLink to="/challenge-of-the-month" activeClassName="active">
-                  Challenge of the Month
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/pages/challenges/p-challenge"
-                  activeClassName="active"
-                >
-                  Previous Challenges
-                </NavLink>
-              </li>
+              {/* For Nexted one */}
               <li className="nested-dropdown">
-                <NavLink to="#" className="nested-toggle">
-                  Marketing
-                </NavLink>
-                <ul className="nested-menu">
-                  <li>
-                    <NavLink to="/marketing/seo" activeClassName="active">
-                      SEO
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/marketing/smm" activeClassName="active">
-                      SMM
-                    </NavLink>
-                  </li>
-                </ul>
+                <li>
+                  <NavLink to="/COM" activeClassName="active">
+                    Challenge of the Month
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/COM_participate" activeClassName="active">
+                    Participate
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/COM_Pwinner" activeClassName="active">
+                    Previous Winners
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/COM_Rules" activeClassName="active">
+                    Rules and Regulation
+                  </NavLink>
+                </li>
               </li>
             </ul>
           </li>
+          {/* second Nav Bar */}
+          <li className="dropdown">
+            <NavLink to="#" className="dropdown-toggle">
+              Hackathon
+            </NavLink>
+            <ul className="dropdown-menu">
+              {/* For Nexted one */}
+              <li className="nested-dropdown">
+                <li>
+                  <NavLink to="/U_events" activeClassName="active">
+                    Upcoming Events
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/P_events" activeClassName="active">
+                    Previous Events
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/H_Highlights" activeClassName="active">
+                    Highlights
+                  </NavLink>
+                </li>
+              </li>
+            </ul>
+          </li>
+          {/* Learning */}
+
+          <li className="dropdown">
+            <NavLink to="#" className="dropdown-toggle">
+              Learning
+            </NavLink>
+            <ul className="dropdown-menu">
+              {/* For Nexted one */}
+              <li className="nested-dropdown">
+                <li>
+                  <NavLink to="/COM" activeClassName="active">
+                    Basic
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/COM_participate" activeClassName="active">
+                    Advanced
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/COM_Pwinner" activeClassName="active">
+                    Arduino's Projects
+                  </NavLink>
+                </li>
+              </li>
+            </ul>
+          </li>
+
           <li>
             <NavLink to="/about" activeClassName="active">
               About
@@ -94,7 +147,7 @@ const NavBar = () => {
               Contact
             </NavLink>
           </li>
-        </ul>
+        </li>
       </nav>
     </div>
   );
