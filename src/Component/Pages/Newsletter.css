@@ -16,6 +16,7 @@
   justify-content: start;
   padding-top: 10%;
   padding-left: 10%;
+  animation: fadeIn 4s;
 }
 
 .main_text_of_Newsletter {
@@ -71,5 +72,13 @@
   }
   100% {
     color: black;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
