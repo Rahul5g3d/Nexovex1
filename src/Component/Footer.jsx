@@ -14,7 +14,6 @@ const Footer = () => {
             <hr />
             <h3>Contact Us</h3>
             <Button />
-            <Form />
           </div>
         </div>
         <p>

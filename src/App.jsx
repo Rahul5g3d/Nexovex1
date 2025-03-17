@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 import NavBar from "./Component/NavBar";
+import Footer from "./Component/Footer1";
 import Home from "./Component/Pages/Home";
 import About from "./Component/Pages/About";
 import Contact from "./Component/Pages/Contact";
@@ -27,6 +28,7 @@ function App() {
         <Route path="/P_events" element={<P_events />} />
         <Route path="/H_Highlights" element={<H_Highlights />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

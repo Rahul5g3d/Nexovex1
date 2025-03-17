@@ -73,9 +73,9 @@ const StyledWrapper = styled.div`
   .wrapper {
     display: inline-flex;
     list-style: none;
-    height: 120px;
+    height: 100px;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 5px;
     font-family: "Poppins", sans-serif;
     justify-content: center;
   }
