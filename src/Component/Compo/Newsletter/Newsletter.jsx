@@ -26,7 +26,7 @@ const StyledWrapper = styled.div`
   /* Unique styles for the newsletter form */
   .newsletter-form {
     max-width: 400px;
-    margin: 0 auto;
+    margin-top: 30px;
     padding: 20px;
     border: 2px solid #333;
     border-radius: 8px;
@@ -57,7 +57,7 @@ const StyledWrapper = styled.div`
   }
 
   .newsletter-form input[type="email"] {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;

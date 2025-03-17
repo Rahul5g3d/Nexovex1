@@ -12,6 +12,8 @@ import COM_participate from "./Component/Pages/Challenges/COM_participate";
 import U_events from "./Component/Pages/Hackathon/U_events";
 import P_events from "./Component/Pages/Hackathon/P_Events";
 import H_Highlights from "./Component/Pages/Hackathon/H_highlight";
+
+import Newsletter from "./Component/Pages/Newsletter";
 function App() {
   return (
     <Router>
@@ -27,6 +29,8 @@ function App() {
         <Route path="/U_events" element={<U_events />} />
         <Route path="/P_events" element={<P_events />} />
         <Route path="/H_Highlights" element={<H_Highlights />} />
+
+        <Route path="/Newsletter" element={<Newsletter />} />
       </Routes>
       <Footer />
     </Router>

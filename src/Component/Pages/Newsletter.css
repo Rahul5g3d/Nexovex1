@@ -1,0 +1,75 @@
+.bodyy {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  height: 100vh;
+  background-image: url("../../../public/digital-7297046.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.main_text_of_Newsletter {
+  display: flex;
+  justify-content: start;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.main_text_of_Newsletter {
+  display: flex;
+  flex-direction: column;
+}
+.Newsletter_text {
+  font-weight: bold;
+}
+.Newsleter_Main_header_text2 {
+  font-size: 4rem;
+  animation: spin 2s infinite, colorChange 2s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes colorChange {
+  0% {
+    color: black;
+  }
+  10% {
+    color: #333;
+  }
+  20% {
+    color: #666;
+  }
+  30% {
+    color: #999;
+  }
+  40% {
+    color: #ccc;
+  }
+  50% {
+    color: #fff;
+  }
+  60% {
+    color: #ccc;
+  }
+  70% {
+    color: #999;
+  }
+  80% {
+    color: #666;
+  }
+  90% {
+    color: #333;
+  }
+  100% {
+    color: black;
+  }
+}

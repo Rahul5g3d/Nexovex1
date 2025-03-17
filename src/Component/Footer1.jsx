@@ -60,7 +60,7 @@ export default function Footer() {
             <h3 className="footer-heading">Organisations</h3>
             <ul className="footer-links">
               <li>
-                <a href="#">Newsletter</a>
+                <a href="/Newsletter">Newsletter</a>
               </li>
               <li>
                 <a href="/About">Challenge Team</a>
